@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Hanalei+Fill&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Hanalei+Fill&family=Josefin+Sans:ital,wght@1,300&family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fjalla+One&family=Hanalei+Fill&family=Josefin+Sans:ital,wght@1,300&family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fjalla+One&family=Gloria+Hallelujah&family=Hanalei+Fill&family=Josefin+Sans:ital,wght@1,300&family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fjalla+One&family=Frijole&family=Gloria+Hallelujah&family=Hanalei+Fill&family=Josefin+Sans:ital,wght@1,300&family=Lobster&family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Utilities */
+.container {
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    height: 270px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #bbab9b;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #f1e3dd;
+    color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+/* Navbar */
+.navbar {
+    background-color: #d9ad7c;
+   
+}
+
+.navbar img {
+    width: 70px;
+    padding: 10px 0;
+}
+
+.navbar h1 {
+    margin: auto 0;
+    font-family: 'Hanalei Fill', cursive;
+}
+
+.navbar .logo {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    padding: 0 10px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-family:  'Hanalei Fill', cursive;
+}
+
+.navbar a:hover {
+    animation: fadeIn 1s ;
+    background: #3b3a30;
+    border: 1px solid #9fa9a3;
+    border-radius: 50%;
+    margin: auto 0;
+    color: #fff;
+}
+
+/* Home */
+#showcase {
+    background: #333 url('./images/160282829.jpg')
+    no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    /* Overlay */
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    font-family: 'Pacifico', cursive;
+}
+
+
+/* About */
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.about div {
+    flex: 1;
+}
+
+.about .about-img {
+    background: url('./images/1475282108.jpg') no-repeat center center/cover;
+    max-width: 400px;
+    min-height: 400px;
+}
+
+.about .about-text {
+    padding: 20px;
+    background-color: #d9ad7c;
+    max-width: 500px;
+    margin: auto 0;
+    opacity: 0.9;
+}
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.about h2 {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.about .about-img-1 {
+    background: url('./images/三兄弟2.jpg') no-repeat center center/cover;
+}
+
+/* Bar */
+.bar {
+    position: relative;
+    top: 110px;
+    height: 200px;
+    right: 0;
+    left: 0;
+    background: #d9ad7c;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+/* Menu */
+.menus {
+    background-color: #d9ad7c;
+}
+
+.menus h2 {
+    padding: 100px 0;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 70px;
+}
+
+.menus .grid-menu {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px;
+}
+
+.menus .card-menu {
+   text-align: center;
+   min-width: 270px;
+   margin: 50px 0
+   
+}
+
+.menus .card-menu:hover {
+    transform: translateY(-15px);
+}
+
+/* Contact */
+#contact {
+    display: flex;
+}
+
+.contact {
+    flex: 1;
+    margin: auto 30px;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 2rem;
+    font-family: 'Frijole', cursive;
+    text-align: center;
+}
+
+li {
+    padding: 20px;
+    font-size: 20px;
+}
+
+i {
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* Footer */
+#footer {
+    background-color: #d9ad7c;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .menus .grid-menu {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    #contact {
+        display: block;
+    }
+    
+   
+  }
+
+
+
+@media (max-width: 600px) {
+    .navbar .container {
+        display: block;
+    }
+
+    .navbar .logo {
+        justify-content: center;
+    }
+
+    .navbar h1 {
+        font-size: 30px;
+    }
+
+    .navbar ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .navbar li {
+        padding: 0px;
+        margin: auto 0;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: contents;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .about .about-img {
+        max-width: 600px;
+    }
+
+    #showcase .showcase-content {
+        padding: 0px;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .menus h2 {
+        margin: 0px;
+        padding: 50px 5px;
+    }
+
+    .menus .grid-menu {
+        display: block;
+    }
+
+    .menus .card-menu {
+        min-width: 0;
+    }
+
+    .contact {
+        margin: auto;
+    }
+
+    .contact li {
+        display: flex;
+    }
+}
+
+
+
+
