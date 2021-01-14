@@ -28,3 +28,26 @@ for (const item of cardMenuItems) {
     }
   });
 }
+
+// Back to top
+window.onscroll = function() {scrollFunction()};
+ 
+let t;
+function scrollFunction() {
+  clearTimeout(t);
+  t = setTimeout(toggleTopBtn, 100);
+}
+
+function toggleTopBtn() {
+  if (document.body.scrollTop > document.getElementsByClassName('navbar')[0].scrollHeight || document.documentElement.scrollTop > document.getElementsByClassName('navbar')[0].scrollHeight) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// 点击按钮，返回顶部
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
